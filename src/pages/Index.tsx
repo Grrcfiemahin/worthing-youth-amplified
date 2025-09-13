@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Users, Handshake, Target, Heart, Mail, Phone, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-youth-empowerment.jpg";
+import { ArrowRight, Users, Handshake, Target, Heart, Mail, MapPin } from "lucide-react";
+import heroImage from "@/assets/hero-parliament-worthing.jpg";
 
 const Index = () => {
   return (
@@ -42,7 +42,7 @@ const Index = () => {
               <div className="relative">
                 <img 
                   src={heroImage} 
-                  alt="Young people collaborating and making their voices heard in Worthing community meetings"
+                  alt="Young people engaging in parliamentary democracy with Worthing seafront in the background"
                   className="rounded-2xl shadow-strong w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
@@ -164,14 +164,10 @@ const Index = () => {
 
             <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="subheading text-white mb-6">Contact Us</h3>
-              <div className="grid md:grid-cols-3 gap-6 text-white/90">
+              <div className="grid md:grid-cols-2 gap-6 text-white/90">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="h-5 w-5" />
-                  <span>info@amplifyyouth.org</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <Phone className="h-5 w-5" />
-                  <span>01903 XXX XXX</span>
+                  <span>you@amplifyyouth.org</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <MapPin className="h-5 w-5" />
