@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, Handshake, Target, Heart, Mail, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-parliament-worthing.jpg";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
+  const [showForm, setShowForm] = useState<'youth' | 'organisation' | null>(null);
+
   return (
     <div className="min-h-screen bg-background">
+      {/* Contact Form Modal */}
+      {showForm && (
+        <ContactForm 
+          type={showForm} 
+          onClose={() => setShowForm(null)} 
+        />
+      )}
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="gradient-hero text-white">
@@ -31,7 +42,10 @@ const Index = () => {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="btn-hero">
+                  <Button 
+                    className="btn-hero"
+                    onClick={() => setShowForm('youth')}
+                  >
                     Get Involved <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                   <Button variant="outline" className="btn-outline border-white text-white hover:bg-white hover:text-primary">
@@ -146,7 +160,10 @@ const Index = () => {
                 <p className="text-white/80 mb-6">
                   Join our community of young changemakers and help shape Worthing's future.
                 </p>
-                <Button className="bg-white text-accent hover:bg-white/90">
+                <Button 
+                  className="bg-white text-accent hover:bg-white/90"
+                  onClick={() => setShowForm('youth')}
+                >
                   Join Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Card>
@@ -156,7 +173,10 @@ const Index = () => {
                 <p className="text-white/80 mb-6">
                   Partner with us to ensure young voices are heard in your decision-making.
                 </p>
-                <Button className="bg-white text-secondary hover:bg-white/90">
+                <Button 
+                  className="bg-white text-secondary hover:bg-white/90"
+                  onClick={() => setShowForm('organisation')}
+                >
                   Partner With Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Card>
