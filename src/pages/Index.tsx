@@ -88,74 +88,75 @@ const Index = () => {
       <section className="py-20 bg-gradient-subtle">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="section-heading text-foreground mb-4">What We Do</h2>
+            <h2 className="section-heading text-foreground mb-4">What We Stand For</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Creating meaningful opportunities for young people to shape their community and future
+              We're not just another youth group - we're a movement for real change in our community
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="card-feature text-center">
-              <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-secondary" />
+            <Card className="card-feature text-center group hover:bg-primary/5 transition-all duration-300">
+              <div className="bg-gradient-to-br from-primary to-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="subheading text-foreground mb-4">Youth Representation</h3>
+              <h3 className="subheading text-foreground mb-4">Your Voice Counts</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Creating a platform where young people can share their views on issues that matter most.
+                Real young people, real opinions. We're creating spaces where what you think actually matters.
               </p>
             </Card>
 
-            <Card className="card-feature text-center">
-              <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Handshake className="h-8 w-8 text-accent" />
+            <Card className="card-feature text-center group hover:bg-secondary/5 transition-all duration-300">
+              <div className="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                <Handshake className="h-8 w-8 text-white" />
               </div>
-              <h3 className="subheading text-foreground mb-4">Collaboration</h3>
+              <h3 className="subheading text-foreground mb-4">Direct Action</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Working with councils, schools, and local organisations to shape policies and projects.
+                We don't just talk - we take action. Working with decision-makers to create real change.
               </p>
             </Card>
 
-            <Card className="card-feature text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Target className="h-8 w-8 text-primary" />
+            <Card className="card-feature text-center group hover:bg-accent/5 transition-all duration-300">
+              <div className="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="subheading text-foreground mb-4">Opportunities</h3>
+              <h3 className="subheading text-foreground mb-4">Skills & Power</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Developing skills, leadership, and confidence through workshops, forums, and campaigns.
+                Learn how to campaign, speak up, and lead. Build the skills to change your world.
               </p>
             </Card>
 
-            <Card className="card-feature text-center">
-              <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="h-8 w-8 text-secondary" />
+            <Card className="card-feature text-center group hover:bg-primary/5 transition-all duration-300">
+              <div className="bg-gradient-to-br from-primary/80 to-accent/80 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                <Heart className="h-8 w-8 text-white" />
               </div>
               <h3 className="subheading text-foreground mb-4">Community Impact</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Making Worthing a better place for young people today and tomorrow.
+                Making Worthing work for young people. Real change starts with us.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Why Amplify Youth Section */}
-      <section className="py-20 bg-primary-lighter/30">
+      {/* Why Join Us Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-heading text-foreground mb-8">Why Amplify Youth?</h2>
+            <h2 className="section-heading text-foreground mb-8">Why Join the Movement?</h2>
             <div className="space-y-8">
               <p className="text-xl text-foreground font-semibold">
-                Because your voice matters.
+                Because change doesn't happen by waiting for adults to listen.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Every decision made about young people should include young people. 
-                At Amplify Youth, we're here to make sure that happens.
+                We're done with being told "you'll understand when you're older." 
+                The climate crisis, housing costs, mental health - these affect us NOW. So we're acting NOW.
               </p>
-              <div className="bg-white rounded-2xl p-8 shadow-medium">
+              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 shadow-medium border border-primary/20">
                 <blockquote className="text-lg italic text-foreground">
-                  "Young people are not just the leaders of tomorrow – they are the changemakers of today. 
-                  Their perspectives, energy, and innovation are essential for creating a community that works for everyone."
+                  "At 15, I started Amplify Youth because I was tired of adults making decisions about our future 
+                  without including us. We're not the leaders of tomorrow - we're the changemakers of today."
                 </blockquote>
+                <p className="text-sm text-primary font-semibold mt-4">- Founder, Amplify Youth</p>
               </div>
             </div>
           </div>
@@ -205,7 +206,7 @@ const Index = () => {
               <div className="grid md:grid-cols-2 gap-6 text-white/90">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="h-5 w-5" />
-                  <span>you@amplifyyouth.org</span>
+                  <span>you@amplifyyouth.uk</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <MapPin className="h-5 w-5" />
