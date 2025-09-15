@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Amplify Youth Design System - Empowering young voices through design */
+/* Amplify Youth Design System - For youth, from youth */
 
 @layer base {
   :root {
@@ -15,23 +15,23 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
 
-    /* Primary - Deep trustworthy blue for authority and trust */
-    --primary: 220 70% 25%;
+    /* Primary - Bold purple for youth empowerment */
+    --primary: 270 65% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 220 60% 35%;
-    --primary-lighter: 220 45% 85%;
+    --primary-light: 270 55% 55%;
+    --primary-lighter: 270 35% 85%;
 
-    /* Secondary - Vibrant orange for energy and youth */
-    --secondary: 25 95% 55%;
+    /* Secondary - Electric blue for energy and connection */
+    --secondary: 220 85% 60%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 25 85% 65%;
-    --secondary-lighter: 25 75% 90%;
+    --secondary-light: 220 75% 70%;
+    --secondary-lighter: 220 60% 90%;
 
-    /* Accent - Fresh green for growth and change */
-    --accent: 145 60% 45%;
+    /* Accent - Vibrant magenta for creativity and passion */
+    --accent: 310 75% 60%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 145 50% 55%;
-    --accent-lighter: 145 40% 90%;
+    --accent-light: 310 65% 70%;
+    --accent-lighter: 310 45% 90%;
 
     --muted: 220 15% 96%;
     --muted-foreground: 220 10% 45%;
@@ -41,7 +41,7 @@
 
     --border: 220 15% 88%;
     --input: 220 15% 88%;
-    --ring: 220 70% 25%;
+    --ring: 270 65% 45%;
 
     --radius: 0.75rem;
 

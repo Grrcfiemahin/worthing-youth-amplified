@@ -23,15 +23,13 @@ const Index = () => {
       <nav className="absolute top-0 left-0 right-0 z-10 bg-white/10 backdrop-blur-sm border-b border-white/20">
         <div className="section-container py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <img 
-                src={logo} 
-                alt="Amplify Youth logo" 
-                className="h-12 w-auto"
-              />
+            <div className="flex items-center space-x-4">
+              <div className="text-6xl font-black text-primary bg-white/20 backdrop-blur-sm px-4 py-2 rounded-xl border border-white/30">
+                AY
+              </div>
               <div className="text-white">
                 <h1 className="text-xl font-bold">Amplify Youth</h1>
-                <p className="text-sm text-white/80">Worthing</p>
+                <p className="text-sm text-white/80 italic">For youth, from youth</p>
               </div>
             </div>
           </div>
@@ -54,11 +52,11 @@ const Index = () => {
                 </div>
                 <div className="space-y-6">
                   <h2 className="section-heading text-white/95">
-                    Empowering young voices. Driving real change.
+                    For youth, from youth. Real voices, real change.
                   </h2>
                   <p className="text-lg text-white/80 max-w-lg leading-relaxed">
-                    We believe that young people should have a seat at the table when decisions are made in Worthing. 
-                    Our mission is to listen, represent, and empower the next generation.
+                    Young people aren't just the future – we're the present. Our voices deserve to be heard, 
+                    our ideas deserve space, and our communities deserve our energy. We're here to make it happen.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
