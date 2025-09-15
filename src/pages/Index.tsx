@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, Handshake, Target, Heart, Mail, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-parliament-worthing.jpg";
-import logo from "@/assets/logo.png";
 import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
@@ -70,14 +68,6 @@ const Index = () => {
                     Learn More
                   </Button>
                 </div>
-              </div>
-              <div className="relative">
-                <img 
-                  src={heroImage} 
-                  alt="Young people engaging in parliamentary democracy with Worthing seafront in the background"
-                  className="rounded-2xl shadow-strong w-full h-auto"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
               </div>
             </div>
           </div>
@@ -223,12 +213,16 @@ const Index = () => {
         <div className="section-container">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Amplify Youth – Worthing</h3>
-            <p className="text-primary-foreground/80">
-              Empowering young voices. Driving real change.
+            <p className="text-primary-foreground/80 mb-4">
+              Made by youth, for youth. Currently in development.
+            </p>
+            <p className="text-sm text-primary-foreground/70 mb-6">
+              This platform isn't officially released yet - we're still building something amazing together. 
+              Stay tuned for our full launch!
             </p>
             <div className="mt-8 pt-8 border-t border-primary-light/30">
               <p className="text-sm text-primary-foreground/60">
-                © 2024 Amplify Youth Worthing. All rights reserved.
+                © 2024 Amplify Youth Worthing. Built by young people, for young people.
               </p>
             </div>
           </div>
