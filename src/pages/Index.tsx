@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, Handshake, Target, Heart, Mail, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-parliament-worthing.jpg";
+import logo from "@/assets/logo.png";
 import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
@@ -17,6 +18,25 @@ const Index = () => {
           onClose={() => setShowForm(null)} 
         />
       )}
+
+      {/* Navigation Header */}
+      <nav className="absolute top-0 left-0 right-0 z-10 bg-white/10 backdrop-blur-sm border-b border-white/20">
+        <div className="section-container py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <img 
+                src={logo} 
+                alt="Amplify Youth logo" 
+                className="h-12 w-auto"
+              />
+              <div className="text-white">
+                <h1 className="text-xl font-bold">Amplify Youth</h1>
+                <p className="text-sm text-white/80">Worthing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
